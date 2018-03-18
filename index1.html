@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Simple calculator</title>
+<style>
+#forms{
+margin-top:50px;
+border-radius:10px;
+}
+#text,#button{
+width:250px;
+height:30px;
+cellpadding:2px;cellspacing:10px;
+}
+input{
+height:45px;
+width:81px;
+margin-top:9px;padding:2px;
+background-color:black;color:white;
+
+}
+</style>
+</head>
+<body bgcolor="#ff3377">
+<center><h1>CALCULATOR</h1></center>
+<center>
+<form id="forms" name="forms">
+<input type="text" name="text" id="text" /><br />
+<input type="button" value=" 1" onclick="forms.text.value +='1'" />
+<input type="button" value=" 2" onclick="forms.text.value +='2'" />
+<input type="button" value=" 3" onclick="forms.text.value +='3'" /><br/>
+
+<input type="button" value=" 4" onclick="forms.text.value +='4'" />
+<input type="button" value=" 5" onclick="forms.text.value +='5'" />
+<input type="button" value=" 6" onclick="forms.text.value +='6'" /><br />
+
+<input type="button" value=" 7" onclick="forms.text.value +='7'" />
+<input type="button" value=" 8" onclick="forms.text.value +='8'" />
+<input type="button" value=" 9" onclick="forms.text.value +='9'" /><br />
+
+<input type="button" value=" +" onclick="forms.text.value +='+'" />
+<input type="button" value=" -" onclick="forms.text.value +='-'" />
+<input type="button" value=" /" onclick="forms.text.value +='/'" /><br />
+
+<input type="button" value=" *" onclick="forms.text.value +='*'" />
+<input type="button" value=" 0" onclick="forms.text.value +='0'" />
+<input type="button" value=" =" onclick="forms.text.value = eval(forms.text.value) " /><br />
+
+<input type="button" value="Clear All" id="button" onclick="forms.text.value = ' '" />
+
+
+
+</form>
+</center>
+</body>
+</html>
